@@ -12,6 +12,22 @@
                     <span><i class="fa fa-phone"></i> +90 532 435 97 07</span>
                     <span class="ms-3"><i class="fa fa-envelope"></i> info@ornek.com</span>
                 </div>
+                <div class="top-bar-right" style="z-index:1000; border: 1px solid #fff; padding: 6px 12px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.8);">
+                    <div class="language-switcher">
+                        <a asp-controller="Home" asp-action="SetLanguage" asp-route-culture="tr">
+                            <span class="fi fi-tr me-2"></span>
+                        </a>
+                        <a asp-controller="Home" asp-action="SetLanguage" asp-route-culture="en">
+                            <span class="fi fi-gb me-2"></span>
+                        </a>
+                        <a asp-controller="Home" asp-action="SetLanguage" asp-route-culture="fr">
+                            <span class="fi fi-fr me-2"></span>
+                        </a>
+                        <a asp-controller="Home" asp-action="SetLanguage" asp-route-culture="de">
+                            <span class="fi fi-de me-2"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- RD Navbar-->
@@ -39,6 +55,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="rd-navbar-element bg-accent">
                         <a class="button button-sm button-default-outline button-winona" href="~/Admin/DashboardIndex">Reservation</a>
                         <button class="rd-navbar-aside-open-toggle" data-multitoggle="#rd-navbar-aside" aria-label="Sidebar toggle"> <span></span><span></span><span></span></button>

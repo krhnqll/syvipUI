@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
     <link rel="icon" href="~/images/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="~/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css?family=Montserrat:300,400,500,600,700">
     <link rel="stylesheet" href="~/css/waitme.css">
     <link rel="stylesheet" href="~/css/fonts.css">
-    <link rel="stylesheet" href="~/css/style.css?0.0.3">
+    <link rel="stylesheet" href="~/css/style.css?0.0.4">
 
 </head>
 <body>
     <div class="preloader" id="loading">
         <div class="preloader-body">
             <div id="loading-center-object">
-                <!-- Buraya kendi logonu ekliyorsun -->
                 <img src="~/images/LOGONEW.png" alt="Logo" class="rotating-logo" />
             </div>
         </div>
     </div>
-    
-    
-    
+
+
+
     <div class="page">
 
         @RenderSection("Header", required: false)
-            
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
