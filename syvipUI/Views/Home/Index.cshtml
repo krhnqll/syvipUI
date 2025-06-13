@@ -1,0 +1,296 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header {
+    <!-- Page Header-->
+    <header class="section page-header page-header-1">
+        <!--Topbar-->
+        <div class="top-bar bg-light py-2 text-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="top-bar-left">
+                    <span><i class="fa fa-phone"></i> +90 532 435 97 07</span>
+                    <span class="ms-3"><i class="fa fa-envelope"></i> info@ornek.com</span>
+                </div>
+            </div>
+        </div>
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="10px" data-xl-stick-up-offset="10px" data-xxl-stick-up-offset="10px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-main">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <!-- RD Navbar Brand-->
+                        <div class="rd-navbar-brand"> <a class="brand" href="~/Home/Index"><img class="brand-logo-dark" src="~/images/logo-111x33.png" alt="" width="111" height="33" loading="lazy" srcset="~/images/LOGONEW.png 2x"></a></div>
+                    </div>
+                    <div class="rd-navbar-nav-wrap">
+                        <!-- RD Navbar Nav-->
+                        <ul class="rd-navbar-nav">
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/About">About</a>
+                            </li>
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/Gallery">Gallery</a>
+                            </li>
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rd-navbar-element bg-accent">
+                        <a class="button button-sm button-default-outline button-winona" href="~/Admin/DashboardIndex">Reservation</a>
+                        <button class="rd-navbar-aside-open-toggle" data-multitoggle="#rd-navbar-aside" aria-label="Sidebar toggle"> <span></span><span></span><span></span></button>
+                    </div>
+                    <div class="rd-navbar-dummy"></div>
+                </div>
+                <div class="rd-navbar-aside" id="rd-navbar-aside">
+                    <div class="rd-navbar-aside-header">
+                        <p class="rd-navbar-aside-title">Hızlı Menü</p>
+                        <button class="rd-navbar-aside-close-toggle linearicons-cross2" data-multitoggle="#rd-navbar-aside" data-scope=".rd-navbar" aria-label="Sidebar toggle"></button>
+                    </div>
+                    <div class="rd-navbar-aside-main">
+                        <div class="rd-navbar-aside-group navbar" data-navbar="{&quot;stuck&quot;: false, &quot;anchor&quot;: {&quot;offsetRef&quot;: &quot;.rd-navbar-main&quot;}}">
+                            <div class="navbar-inner">
+                                <a class="rd-navbar-aside-link" href="about-us.html">About Us</a><a class="rd-navbar-aside-link" href="faq.html">FAQ</a><a class="rd-navbar-aside-link" href="testimonials.html">Testimonials</a><a class="rd-navbar-aside-link" href="our-team.html">Our Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- FScreen-->
+        <div class="layout-4">
+            <div class="layout-4-item-right">
+                <div class="box-custom-2 bg-accent">
+                    <div class="box-custom-2-bg">
+                        <div class="box-custom-2-bg-inner">
+                            <div class="box-custom-2-bg-image" style="background-image: url(~/images/index-2-1397x1397.png);"></div>
+                        </div>
+                    </div>
+                    <div class="box-custom-2-inner">
+                        <h2 class="wow fadeIn">Fast Reservation</h2>
+                        <div class="contacts-default">
+                            <div class="unit align-items-center">
+                                <div class="unit-left">
+                                    <div class="contacts-default-icon mdi mdi-phone-incoming"></div>
+                                </div>
+                                <div class="unit-body"><a class="contacts-default-link" href="#">+90 532 435 97 07</a></div>
+                            </div>
+                        </div>
+                        <p class="big wow fadeIn" data-wow-delay=".2s">
+                            Reliable transfer service
+
+                        </p>
+                        <!-- RD Mailform-->
+                        <form class="rd-form rd-mailform form-style-1">
+                            <div class="form-wrap">
+                                <!-- Select 2-->
+                                <select class="form-input select button-shadow" name="find-job-location" data-minimum-results-for-search="Infinity" data-placeholder="Car Type">
+                                    <option label="placeholder"></option>
+                                    <option>Type 1</option>
+                                    <option>Type 2</option>
+                                    <option>Type 3</option>
+                                </select>
+                            </div>
+                            <div class="form-wrap">
+                                <input class="form-input" id="form-location" type="text" name="pickup-address">
+                                <label class="form-label" for="form-location">Pickup Address</label><span class="form-icon mdi mdi-map-marker"></span>
+                            </div>
+                            <div class="form-wrap">
+                                <input class="form-input" id="form-location-2" type="text" name="destination-address">
+                                <label class="form-label" for="form-location-2">Destination Address</label><span class="form-icon mdi mdi-map-marker"></span>
+                            </div>
+                            <div class="form-wrap-2">
+                                <div class="form-wrap">
+                                    <input class="form-input" id="form-phone" type="text" name="phone">
+                                    <label class="form-label" for="form-phone">Your Phone Number</label><span class="form-icon mdi mdi-cellphone"></span>
+                                </div>
+                                <div class="form-button">
+                                    <button class="button button-block button-secondary button-winona" type="submit">Order now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-4-item-left">
+                <img src="~/images/indexcar1.png" alt="" width="600" height="475" loading="lazy">
+            </div>
+        </div>
+    </header>
+}
+<!-- Messenger of The Next Generation-->
+<section class="section section-md bg-gray-100 text-center" id="features">
+    <div class="container">
+        <h3 class="wow fadeIn" data-wow-delay=".1s">Our Services</h3>
+        <div class="row row-30 row-md-50 row-xl-60">
+            <div class="col-sm-6 col-lg-4 wow fadeIn">
+                <!-- Box Modern-->
+                <article class="box-modern" data-anime="circles-1">
+                    <div class="box-modern-media">
+                        <div class="box-modern-icon mdi mdi-account-plus"></div>
+                        <div class="box-modern-circle box-modern-circle-1"></div>
+                        <div class="box-modern-circle box-modern-circle-2"></div>
+                    </div>
+                    <p class="box-modern-title">Private Driver</p>
+                    <div class="box-modern-text">
+                        <p>Enjoy the best customer service from our professional drivers.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <!-- Box Modern-->
+                <article class="box-modern box-modern_alternate" data-anime="circles-2">
+                    <div class="box-modern-media">
+                        <div class="box-modern-icon mdi mdi-airplane"></div>
+                        <div class="box-modern-circle box-modern-circle-1"></div>
+                        <div class="box-modern-circle box-modern-circle-2"></div>
+                    </div>
+                    <p class="box-modern-title">Airport transfer</p>
+                    <div class="box-modern-text">
+                        <p>Comfortable transfer services from airport to any chosen address.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <!-- Box Modern-->
+                <article class="box-modern" data-anime="circles-1">
+                    <div class="box-modern-media">
+                        <div class="box-modern-icon mdi mdi-briefcase-check"></div>
+                        <div class="box-modern-circle box-modern-circle-1"></div>
+                        <div class="box-modern-circle box-modern-circle-2"></div>
+                    </div>
+                    <p class="box-modern-title">Baggage Transfer</p>
+                    <div class="box-modern-text">
+                        <p>If you need to collect your baggage, we are ready to help you.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-lg bg-accent oh">
+    <div class="container">
+        <div class="row row-50 justify-content-center align-items-center align-items-lg-stretch flex-md-row-reverse">
+            <div class="col-sm-5 col-md-5 col-lg-6 wow fadeInLeftSmall position-relative">
+                <div class="phone-frame-2 text-end">
+                    <img class="phone-frame-2-outer" src="~/images/altaraba1.png" alt="" width="533" height="868" loading="lazy">
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-6 wow fadeInRightSmall">
+                <h3>Download the app</h3>
+                <!-- Bootstrap tabs-->
+                <div class="tabs-custom tabs-horizontal tabs-line tabs-line_1 block-8" id="tabs-1">
+                    <!-- Nav tabs-->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-bs-toggle="tab"><span>Details</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-bs-toggle="tab"><span>How it Works</span></a></li>
+                    </ul>
+                    <!-- Tab panes-->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tabs-1-1">
+                            <p>Download our app and enjoy the best service from ETAXI. All you have to do to begin using it is to enter your name and mobile phone number. You’ll access:</p>
+                            <ul class="list-marked list-marked_secondary">
+                                <li>Special offers</li>
+                                <li>ETAXI loyalty program</li>
+                                <li>More pricing plans</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-1-2">
+                            <p>ETAXI App allows you to book a taxi without having to call our dispatcher as well as set your route in advance or pick a driver, a preferred car, and more:</p>
+                            <ul class="list-marked list-marked_secondary">
+                                <li>Manage your taxi spendings;</li>
+                                <li>Pay for taxi without a credit card;</li>
+                                <li>Great discounts for regular clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="group"><a href="#"><img src="~/images/button-1-170x53.png" alt="" width="170" height="53" loading="lazy"></a><a href="#"><img src="~/images/button-2-170x53.png" alt="" width="170" height="53" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Stickers-->
+<section class="section section-1 text-center" id="stickers">
+    <div class="container">
+        <div class="row justify-content-center align-items-center bordered-1">
+            <div class="col-sm-4">
+                <div class="box-default">
+                    <p class="box-default-title">Standard</p>
+                    <p class="box-default-text">$2,7 /km</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box-default">
+                    <p class="box-default-title">Business</p>
+                    <p class="box-default-text">$5,7 /km</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box-default">
+                    <p class="box-default-title">Premium</p>
+                    <p class="box-default-text">$7,7 /km</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section oh">
+    <div class="container">
+        <div class="row justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-5 col-xl-4">
+                <div class="section-md">
+                    <h3>How we work</h3>
+                    <p class="offset-top-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat eros ac finibus congue. Integer</p><a class="button button-secondary button-winona" href="#">Order a taxi</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-lg-7">
+                <!-- Timeline-->
+                <div class="timeline-classic timeline-classic_1">
+                    <div class="timeline-classic-item">
+                        <div class="timeline-classic-item-inner">
+                            <div class="timeline-classic-item-decoration"></div>
+                            <p class="timeline-classic-title"><span>Choose a pickup address</span></p>
+                            <div class="timeline-classic-text">
+                                <p>Pellentesque placerat eros ac finibus congue. Integer consectetur, lorem nec accumsan commodo, sem mauris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-classic-item">
+                        <div class="timeline-classic-item-inner">
+                            <div class="timeline-classic-item-decoration"></div>
+                            <p class="timeline-classic-title"><span>Choose your destination</span></p>
+                            <div class="timeline-classic-text">
+                                <p>Albus, emeritis hibridas hic dignus de fortis, altus orexis. Regius axonas ducunt ad historia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-classic-item">
+                        <div class="timeline-classic-item-inner">
+                            <div class="timeline-classic-item-decoration"></div>
+                            <p class="timeline-classic-title"><span>Pick a driver</span></p>
+                            <div class="timeline-classic-text">
+                                <p>Sunt nomenes captis castus, azureus contencioes. Emeritis, clemens rumors satis amor de pius, mirabilis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-classic-item">
+                        <div class="timeline-classic-item-inner">
+                            <div class="timeline-classic-item-decoration"></div>
+                            <p class="timeline-classic-title"><span>Select a preferred car</span></p>
+                            <div class="timeline-classic-text">
+                                <p>Camerarius species vix quaestios historia est. Camerarius, bassus tumultumques saepe gratia de teres. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/src/js/page/index.js"></script>
+

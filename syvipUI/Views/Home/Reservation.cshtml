@@ -1,0 +1,145 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header {
+    <!-- Page Header-->
+    <header class="section page-header page-header-4">
+        <!--Topbar-->
+        <div class="top-bar bg-light py-2 text-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="top-bar-left">
+                    <span><i class="fa fa-phone"></i> +90 532 435 97 07</span>
+                    <span class="ms-3"><i class="fa fa-envelope"></i> info@ornek.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="10px" data-xl-stick-up-offset="10px" data-xxl-stick-up-offset="10px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-main">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <!-- RD Navbar Brand-->
+                        <div class="rd-navbar-brand"> <a class="brand" href="~/Home/Index"><img class="brand-logo-dark" src="~/images/logo-111x33.png" alt="" width="111" height="33" loading="lazy" srcset="~/images/LOGONEW.png 2x"></a></div>
+                    </div>
+                    <div class="rd-navbar-nav-wrap">
+                        <!-- RD Navbar Nav-->
+                        <ul class="rd-navbar-nav">
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/About">About</a>
+                            </li>
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/Gallery">Gallery</a>
+                            </li>
+                            <li class="rd-nav-item">
+                                <a class="rd-nav-link" href="~/Home/Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rd-navbar-element">
+                        <a class="button button-sm button-default-outline button-winona" href="~/Home/Reservation">Reservation</a>
+                        <button class="rd-navbar-aside-open-toggle" data-multitoggle="#rd-navbar-aside" aria-label="Sidebar toggle"> <span></span><span></span><span></span></button>
+                    </div>
+                    <div class="rd-navbar-dummy"></div>
+                </div>
+                <div class="rd-navbar-aside" id="rd-navbar-aside">
+                    <div class="rd-navbar-aside-header">
+                        <p class="rd-navbar-aside-title">Navigation</p>
+                        <button class="rd-navbar-aside-close-toggle linearicons-cross2" data-multitoggle="#rd-navbar-aside" data-scope=".rd-navbar" aria-label="Sidebar toggle"></button>
+                    </div>
+                    <div class="rd-navbar-aside-main">
+                        <div class="rd-navbar-aside-group navbar" data-navbar="{&quot;stuck&quot;: false, &quot;anchor&quot;: {&quot;offsetRef&quot;: &quot;.rd-navbar-main&quot;}}">
+                            <div class="navbar-inner">
+                                <a class="rd-navbar-aside-link active" href="about-us.html">About Us</a><a class="rd-navbar-aside-link" href="faq.html">FAQ</a><a class="rd-navbar-aside-link" href="testimonials.html">Testimonials</a><a class="rd-navbar-aside-link" href="our-team.html">Our Team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+}
+
+<!-- Reservation Form-->
+<section class="section section-md bg-gray-100 text-center">
+    <div class="container">
+        <h3>Rezervasyon Formu</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-11 col-xl-9">
+                <!-- RD Mailform-->
+
+                <div class="row row-x-16 row-20">
+
+                    <!-- Başlangıç Lokasyonu -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <select class="form-input" id="start-location" name="start_location">
+                                <option value="" disabled selected>Başlangıç Lokasyonu Seçin</option>
+                            </select>
+                            <label class="form-label" for="start-location">Başlangıç Lokasyonu</label>
+                        </div>
+                    </div>
+
+                    <!-- Varış Lokasyonu -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <select class="form-input" id="end-location" name="end_location">
+                                <option value="" disabled selected>Varış Lokasyonu Seçin</option>
+                            </select>
+                            <label class="form-label" for="end-location">Varış Lokasyonu</label>
+                        </div>
+                    </div>
+
+
+                    <!-- Rezervasyon Tarihi -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <input class="form-input" id="reservation-date" type="date" name="reservation_date">
+                            <label class="form-label" for="reservation-date"></label>
+                        </div>
+                    </div>
+
+                    <!-- Rezervasyon Saati -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <input class="form-input" id="reservation-time" type="time" name="reservation_time">
+                            <label class="form-label" for="reservation-time"></label>
+                        </div>
+                    </div>
+
+                    <!-- Ad Soyad -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <input class="form-input" id="reservation-name" type="text" name="name">
+                            <label class="form-label" for="reservation-name">Ad Soyad</label>
+                        </div>
+                    </div>
+
+                    <!-- Telefon -->
+                    <div class="col-md-6">
+                        <div class="form-wrap">
+                            <input class="form-input" id="reservation-phone" type="text" name="phone">
+                            <label class="form-label" for="reservation-phone">Telefon</label>
+                        </div>
+                    </div>
+
+                    <!-- Gönder -->
+                    <div class="col-12">
+                        <div class="form-wrap form-button">
+                            <button class="button button-block button-secondary button-winona" type="submit">Rezervasyon Yap</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="~/src/js/page/reservation.js"></script>
