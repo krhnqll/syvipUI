@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\View\Home\" />
-    <Folder Include="wwwroot\src\js\admin\" />
   </ItemGroup>
 
 </Project>
